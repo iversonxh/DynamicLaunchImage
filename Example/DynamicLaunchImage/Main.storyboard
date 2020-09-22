@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GJm-WL-1WZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--启动图替换-->
+        <scene sceneID="E3c-jP-QhO">
+            <objects>
+                <viewController id="byz-cp-lae" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PEn-8d-nci">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPa-zn-WrM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0y-aB-iGU" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="367"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-XL-4A6">
+                                                <rect key="frame" x="127" y="17" width="160" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GOr-f1-7Qp"/>
+                                                    <constraint firstAttribute="width" constant="160" id="aZg-1A-FW4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title=" 自动退出" image="unselected">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="selected"/>
+                                                <connections>
+                                                    <action selector="markToAutoExit:" destination="byz-cp-lae" eventType="touchUpInside" id="xjl-ia-N0M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-Hu-XBN">
+                                                <rect key="frame" x="127" y="87" width="160" height="65"/>
+                                                <color key="backgroundColor" red="0.64278726360000005" green="0.78496243340000005" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="Ue2-6z-vrr"/>
+                                                    <constraint firstAttribute="height" constant="65" id="ZPV-S1-PmC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="从相册中选取">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="useImageFromPhotoAlbum:" destination="byz-cp-lae" eventType="touchUpInside" id="Nlt-3M-gi1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkj-xh-oYy">
+                                                <rect key="frame" x="127" y="182" width="160" height="65"/>
+                                                <color key="backgroundColor" red="0.64278726360000005" green="0.78496243340000005" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="oMM-3s-ImD"/>
+                                                    <constraint firstAttribute="width" constant="160" id="thX-cD-X0D"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="使用SB替换">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="useSnapshotFromDynamicSB:" destination="byz-cp-lae" eventType="touchUpInside" id="Pz2-Eg-OKh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-UU-MZZ">
+                                                <rect key="frame" x="127" y="272" width="160" height="65"/>
+                                                <color key="backgroundColor" red="0.64278726360000005" green="0.78496243340000005" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="Kyk-W9-aiz"/>
+                                                    <constraint firstAttribute="height" constant="65" id="o04-rJ-TjE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="恢复">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="backToNormal:" destination="byz-cp-lae" eventType="touchUpInside" id="yXr-CC-hZf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="eYk-Hu-XBN" firstAttribute="top" secondItem="q7Q-XL-4A6" secondAttribute="bottom" constant="20" id="LZ3-yI-tOP"/>
+                                            <constraint firstItem="q7Q-XL-4A6" firstAttribute="top" secondItem="i0y-aB-iGU" secondAttribute="top" constant="17" id="a1z-nq-sBd"/>
+                                            <constraint firstItem="zkj-xh-oYy" firstAttribute="centerX" secondItem="i0y-aB-iGU" secondAttribute="centerX" id="cHl-RS-GD7"/>
+                                            <constraint firstItem="eYk-Hu-XBN" firstAttribute="centerX" secondItem="i0y-aB-iGU" secondAttribute="centerX" id="g3x-RC-H2V"/>
+                                            <constraint firstItem="YZy-UU-MZZ" firstAttribute="centerX" secondItem="i0y-aB-iGU" secondAttribute="centerX" id="kY9-2d-IpG"/>
+                                            <constraint firstAttribute="bottom" secondItem="YZy-UU-MZZ" secondAttribute="bottom" constant="30" id="p73-zv-VzH"/>
+                                            <constraint firstItem="q7Q-XL-4A6" firstAttribute="centerX" secondItem="i0y-aB-iGU" secondAttribute="centerX" id="pNI-nB-Ucb"/>
+                                            <constraint firstItem="zkj-xh-oYy" firstAttribute="top" secondItem="eYk-Hu-XBN" secondAttribute="bottom" constant="30" id="y1e-uu-e5q"/>
+                                            <constraint firstItem="YZy-UU-MZZ" firstAttribute="top" secondItem="zkj-xh-oYy" secondAttribute="bottom" constant="25" id="zbm-Lm-o0y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="i0y-aB-iGU" firstAttribute="top" secondItem="vPa-zn-WrM" secondAttribute="top" constant="8" id="6vy-ag-v7Q"/>
+                                    <constraint firstItem="i0y-aB-iGU" firstAttribute="trailing" secondItem="HYJ-iZ-bAO" secondAttribute="trailing" id="DHH-sm-qRj"/>
+                                    <constraint firstItem="HYJ-iZ-bAO" firstAttribute="bottom" secondItem="i0y-aB-iGU" secondAttribute="bottom" id="VTo-VK-gqG"/>
+                                    <constraint firstItem="i0y-aB-iGU" firstAttribute="top" secondItem="HYJ-iZ-bAO" secondAttribute="top" constant="8" id="pdR-CS-vA4"/>
+                                    <constraint firstItem="i0y-aB-iGU" firstAttribute="leading" secondItem="HYJ-iZ-bAO" secondAttribute="leading" id="vTw-E8-9G8"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="HYJ-iZ-bAO"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="G8B-JX-Rxq"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vPa-zn-WrM" firstAttribute="leading" secondItem="Xog-KY-Dm8" secondAttribute="leading" id="2Eq-z4-iey"/>
+                            <constraint firstItem="i0y-aB-iGU" firstAttribute="leading" secondItem="Xog-KY-Dm8" secondAttribute="leading" id="JoG-IS-whe"/>
+                            <constraint firstItem="vPa-zn-WrM" firstAttribute="bottom" secondItem="Xog-KY-Dm8" secondAttribute="bottom" id="b2f-DZ-sx5"/>
+                            <constraint firstItem="Xog-KY-Dm8" firstAttribute="trailing" secondItem="i0y-aB-iGU" secondAttribute="trailing" id="clS-td-eK0"/>
+                            <constraint firstItem="vPa-zn-WrM" firstAttribute="top" secondItem="Xog-KY-Dm8" secondAttribute="top" id="j9Z-3O-o7L"/>
+                            <constraint firstItem="Xog-KY-Dm8" firstAttribute="trailing" secondItem="vPa-zn-WrM" secondAttribute="trailing" id="wmZ-Ld-5nI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xog-KY-Dm8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="启动图替换" id="IcU-pM-Q6w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CV7-4a-iip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="-219.64285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9yR-Rw-GwS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GJm-WL-1WZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7R0-Dg-taa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="byz-cp-lae" kind="relationship" relationship="rootViewController" id="XVt-up-2V1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufT-rm-zxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="-219.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selected" width="20" height="20"/>
+        <image name="unselected" width="20" height="20"/>
+    </resources>
+</document>

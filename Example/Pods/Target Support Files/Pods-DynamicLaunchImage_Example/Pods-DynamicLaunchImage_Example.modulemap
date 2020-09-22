@@ -1,0 +1,6 @@
+framework module Pods_DynamicLaunchImage_Example {
+  umbrella header "Pods-DynamicLaunchImage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DynamicLaunchImage",
+  "version": "0.1.0",
+  "summary": "A short description of DynamicLaunchImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shishu01/DynamicLaunchImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "seth": "iversonxue3@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iversonxh/DynamicLaunchImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DynamicLaunchImage/Classes/**/*"
+}

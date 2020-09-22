@@ -1,0 +1,16 @@
+PODS:
+  - DynamicLaunchImage (0.1.0)
+
+DEPENDENCIES:
+  - DynamicLaunchImage (from `../`)
+
+EXTERNAL SOURCES:
+  DynamicLaunchImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynamicLaunchImage: 846f291d0ceb10c4746dd7fa2333bdca0a232e84
+
+PODFILE CHECKSUM: 65d6b272b79e6f1494f95b7973fde7eb8a83351a
+
+COCOAPODS: 1.9.3
